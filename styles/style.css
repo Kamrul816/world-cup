@@ -2,7 +2,46 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 80vw;
+    margin: 30px auto;
+    border-radius: 15px;
+    background-color: #161616;
+}
+
+.half-width .text {
+    color: #fff;
+    width: 50%;
+    margin-top: 50px;
+    /* margin-bottom: 20px; */
+    margin-left: 70px;
+    font-size: 2em;
+}
+
+.text-p {
+    color: #fff;
+    width: 50%;
+    margin: 30px 70px;
+    font-size: .8em;
+}
+
+.link-button {
+    margin: 70px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #DD0000;
+}
+
+.half-width img {
+    margin-top: 20px;
+    padding-right: 100px;
 }
