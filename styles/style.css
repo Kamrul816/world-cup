@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -21,7 +22,7 @@ body {
 .half-width .text {
     color: #fff;
     width: 50%;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 70px;
     padding-top: 40px;
     font-size: 2em;
@@ -30,7 +31,7 @@ body {
 .text-p {
     color: #fff;
     width: 50%;
-    margin: 30px 70px;
+    margin: 40px 70px;
     font-size: .8em;
 }
 
@@ -49,9 +50,9 @@ body {
 }
 
 .half-width img {
-    width: 70%;
-    margin-top: 70px;
-    padding-right: 200px;
+    width: 85%;
+    margin-top: 72px;
+    padding-right: 330px;
     overflow: hidden;
 }
 .half-width:hover img {
@@ -65,7 +66,7 @@ body {
 .container {
     display: flex;
     width: 85vw;
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
 .blog {
@@ -76,19 +77,19 @@ body {
     background-color: #161616;
 }
 
-.upcoming {
+.upcoming-btn {
     margin: 10px;
     padding: 8px 10px;
     border-radius: 5px;
 }
 
-.group {
+.group-btn {
     margin: 10px;
     padding: 8px 32px;
     border-radius: 5px;
 }
 
-.blog-select {
+.blog-btn {
     color: #fff;
     margin: 10px;
     padding: 8px 48px;
@@ -104,7 +105,7 @@ body {
     margin-left: 20px;
 }
 
-.card {
+.card, .flag {
     border: 1px solid #E8E8E8;
     border-radius: 10px;
 }
@@ -137,13 +138,41 @@ body {
     margin-right: 5px;
 }
 
+/* 2nd page  */
+
+.upcoming-btn-two {
+    margin: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #DD0000;
+}
+
+.blog-btn-two {
+    color: #161616;
+    margin: 10px;
+    padding: 8px 48px;
+    border-radius: 5px;
+    background-color:#E8E8E8;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+
 /* Footer section  */
 footer {
     background-color: #161616;
     color: #FFFFFF;
     text-align: center;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .goal {
@@ -186,3 +215,32 @@ hr {
     margin: 30px 10px;
     font-size: 10px;
 }
+
+/* Smaller device  */
+@media screen and (max-width: 576px){
+    .header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header .half-width img{
+        height: 100%;
+        direction: 
+    }
+    .blog{
+        flex-direction:;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        flex-direction: ;
+    }
+}
+
+/* Medium device  */
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
